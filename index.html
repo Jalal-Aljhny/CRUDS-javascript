@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>cruds</h1>
+        <p>product management system</p>
+      </div>
+    </header>
+    <section class="input">
+      <div class="container">
+        <input type="text" id="title" placeholder="Title" title="Title" />
+        <div class="total">
+          <input type="number" id="price" placeholder="Price" title="Price" />
+          <input type="number" id="taxes" placeholder="Taxes" title="Taxes" />
+          <input type="number" id="ads" placeholder="Ads" title="Ads" />
+          <input
+            type="number"
+            id="discount"
+            placeholder="Discount"
+            title="Discount"
+          />
+          <small></small>
+        </div>
+        <input type="text" id="count" placeholder="Count" title="Count" />
+        <input
+          type="text"
+          id="category"
+          placeholder="Category"
+          title="Category"
+        />
+        <button id="create">Create</button>
+      </div>
+    </section>
+    <section class="output">
+      <div class="container">
+        <input type="search" id="search" placeholder="Search" title="Search" />
+        <div>
+          <button id="search-title">Search By Title</button>
+          <button id="search-category">Search By Category</button>
+        </div>
+        <button id="delete-all"></button>
+        <table>
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>title</th>
+              <th>price</th>
+              <th>taxes</th>
+              <th>ads</th>
+              <th>discount</th>
+              <th>total</th>
+              <th>category</th>
+              <th>update</th>
+              <th>delete</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+    <script src="main.js" defer></script>
+  </body>
+</html>
